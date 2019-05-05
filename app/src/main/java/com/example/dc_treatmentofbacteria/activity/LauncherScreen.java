@@ -1,4 +1,4 @@
-package com.example.dc_treatmentofbacteria.Activity;
+package com.example.dc_treatmentofbacteria.activity;
 
 import android.content.Intent;
 import android.os.Handler;

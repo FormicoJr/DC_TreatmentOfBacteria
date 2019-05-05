@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.dc_treatmentofbacteria.Activity.Activity.LauncherScreen">
+    tools:context="com.example.dc_treatmentofbacteria.activity.LauncherScreen">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="379dp"
-        android:layout_height="378dp"
+        android:layout_width="364dp"
+        android:layout_height="321dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
@@ -27,9 +27,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="4dp"
-        android:foreground="@drawable/logo_veterinaria"
         android:scaleType="centerCrop"
-        android:src="@drawable/sistemas_de_informacao"
+        android:src="@drawable/veterinaria_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.794"
@@ -43,7 +42,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="4dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/sistemas_de_informacao"
+        android:src="@drawable/sistemas_de_informacao_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.206"

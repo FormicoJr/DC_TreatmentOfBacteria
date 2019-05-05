@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.dc_treatmentofbacteria.Activity.Home"></activity>
-        <activity android:name="com.example.dc_treatmentofbacteria.Activity.LauncherScreen">
+        <activity android:name=".activity.BacteriaList"></activity>
+        <activity android:name=".activity.Home" />
+        <activity android:name=".activity.LauncherScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,4 +19,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
