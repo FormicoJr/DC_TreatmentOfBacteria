@@ -24,6 +24,6 @@ public class LauncherScreen extends AppCompatActivity {
                 startActivity(new Intent(getBaseContext(), Home.class));
                 finish();
             }
-        }, 3000);
+        }, 2500);
     }
 }
