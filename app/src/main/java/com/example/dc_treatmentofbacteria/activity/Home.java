@@ -5,36 +5,62 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.dc_treatmentofbacteria.R;
 
 public class Home extends AppCompatActivity {
 
-    private Button btnCanino;
-    private Button btnFelino;
+    private ImageButton btnSmallSize;
+    private ImageButton btnSwine;
+    private ImageButton btnEquine;
+    private ImageButton btnBovine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        //Referência dos botões da activity
-        btnCanino = findViewById(R.id.btnCanino);
-        btnFelino = findViewById(R.id.btnFelino);
+        getSupportActionBar().hide();
 
-        btnCanino.setOnClickListener(new View.OnClickListener() {
+        btnSmallSize = findViewById(R.id.btnSmallSize);
+        btnSwine = findViewById(R.id.btnSwine);
+        btnBovine = findViewById(R.id.btnBovine);
+        btnEquine = findViewById(R.id.btnEquine);
+
+        btnSmallSize.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextActivity = new Intent(getApplicationContext(), BacteriaList.class);
-                startActivity(nextActivity);
+                Intent smallSize = new Intent(getApplicationContext(), BacteriaList.class);
+                smallSize.putExtra("smallSize", "smallSize");
+                startActivity(smallSize);
             }
         });
 
-        btnFelino.setOnClickListener(new View.OnClickListener() {
+        btnSwine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextActivity = new Intent(getApplicationContext(), BacteriaList.class);
-                startActivity(nextActivity);
+                Intent swine = new Intent(getApplicationContext(), BacteriaList.class);
+                swine.putExtra("swine", "swine");
+                startActivity(swine);
+            }
+        });
+
+        btnBovine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent bovine = new Intent(getApplicationContext(), BacteriaList.class);
+                bovine.putExtra("bovine", "bovine");
+                startActivity(bovine);
+            }
+        });
+
+        btnEquine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent equine = new Intent(getApplicationContext(), BacteriaList.class);
+                equine.putExtra("equine", "equine");
+                startActivity(equine);
             }
         });
     }

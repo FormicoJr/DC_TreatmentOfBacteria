@@ -15,7 +15,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/launcher"
+        android:src="@drawable/ic_logo_vet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
