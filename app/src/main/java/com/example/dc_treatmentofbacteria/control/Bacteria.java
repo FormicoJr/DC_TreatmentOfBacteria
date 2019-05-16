@@ -46,91 +46,73 @@ public class Bacteria implements Serializable {
                 "Fluoroquinolonas - Aminoglicosideos ", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
+        bacteria = new Bacteria("Clostridium perfringens", "Gram Positiva",
                 "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+                "Fluoroquinolonas - Aminoglicosideos - Tulatromicina", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
+        bacteria = new Bacteria("Bosdetella bronchiseptica", "Gram Negativa",
                 "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
-        this.bacterias.add(bacteria);
-
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+                "Fluoroquinolonas - Tianfenicois - Macrolideos - Lincosamidas - Tulatromicina", "");
         this.bacterias.add(bacteria);
 
         return bacterias;
     }
 
     public List<Bacteria> smallSize() {
-        Bacteria bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        Bacteria bacteria = new Bacteria("Actinomyces  sp", "Gram Positiva",
+                "Penicilina",
+                "Tetracilinas", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+
+        bacteria = new Bacteria("Borrelia burgdorferi", "Gram Negativa",
+                "Tetramicina",
+                "Penicilina", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
-        this.bacterias.add(bacteria);
-
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        bacteria = new Bacteria("Listeria monocytogenes", "Gram Positiva",
+                "Ampicilina",
+                "Tetracilinas", "");
         this.bacterias.add(bacteria);
 
         return bacterias;
     }
 
     public List<Bacteria> bovine() {
-        Bacteria bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        Bacteria bacteria = new Bacteria("E. coli", "Gram Negativa",
+                "Aminoglicosideos",
+                "Sulfonamidas - Fluoroquinolonas", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        bacteria = new Bacteria("Staphylococcus aureus", "Gram Positiva",
+                "Tilmicosinas",
+                "Fluoroquinolonas - Lincosamidas", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
-        this.bacterias.add(bacteria);
-
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        bacteria = new Bacteria("Mycoplasma spp", "Gram Negativa",
+                "Oxitetraciclina - Espectinomicina",
+                "Fluoroquinolonas - Florfenicol", "");
         this.bacterias.add(bacteria);
 
         return bacterias;
     }
 
     public List<Bacteria> equine() {
-        Bacteria bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        Bacteria bacteria = new Bacteria("Proteus", "Gram Negativa",
+                "Penicilina",
+                "Trimetoprima - Sulfonamidas - Amplicilina", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+
+        bacteria = new Bacteria("Estreptococcus equi", "Gram Positiva",
+                "Penicilina",
+                "Trimetoprima - Sulfonamidas", "");
         this.bacterias.add(bacteria);
 
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
-        this.bacterias.add(bacteria);
-
-        bacteria = new Bacteria("Ercherichia coli", "Positiva",
-                "Tetracilinas - Trimetoprima - Sulfonamidas - Cefalosporinas",
-                "Fluoroquinolonas - Aminoglicosideos ", "");
+        bacteria = new Bacteria("Brucella abortus", "Gram Negativa",
+                "Oxitetraciclina",
+                "Gentamicina", "");
         this.bacterias.add(bacteria);
 
 

@@ -32,7 +32,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent smallSize = new Intent(getApplicationContext(), BacteriaList.class);
-                smallSize.putExtra("smallSize", "smallSize");
+                smallSize.putExtra("animal", "smallSize");
                 startActivity(smallSize);
             }
         });
@@ -41,7 +41,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent swine = new Intent(getApplicationContext(), BacteriaList.class);
-                swine.putExtra("swine", "swine");
+                swine.putExtra("animal", "swine");
                 startActivity(swine);
             }
         });
@@ -50,7 +50,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent bovine = new Intent(getApplicationContext(), BacteriaList.class);
-                bovine.putExtra("bovine", "bovine");
+                bovine.putExtra("animal", "bovine");
                 startActivity(bovine);
             }
         });
@@ -59,7 +59,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent equine = new Intent(getApplicationContext(), BacteriaList.class);
-                equine.putExtra("equine", "equine");
+                equine.putExtra("animal", "equine");
                 startActivity(equine);
             }
         });

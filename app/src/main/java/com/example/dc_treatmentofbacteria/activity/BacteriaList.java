@@ -46,6 +46,10 @@ public class BacteriaList extends AppCompatActivity {
                         Bacteria bacteria = listBacteria.get(position);
 
                         enviar.putExtra("nameBacteria", bacteria.getName());
+                        enviar.putExtra("gram", bacteria.getGram());
+                        enviar.putExtra("antibiotic1", bacteria.getAntibiotic1());
+                        enviar.putExtra("antibiotic2", bacteria.getAntibiotic2());
+                        enviar.putExtra("obs", bacteria.getObs());
                         startActivity(enviar);
 
                     }
@@ -68,20 +72,17 @@ public class BacteriaList extends AppCompatActivity {
     public List<Bacteria> detailsBacteria(){
 
         Bundle typeAnimal = getIntent().getExtras();
-        String smallSize = typeAnimal.getString("smallSize");
-        String swine = typeAnimal.getString("swine");
-        String bovine = typeAnimal.getString("bovine");
-        String equine = typeAnimal.getString("equine");
+        String animal = typeAnimal.getString("animal");
 
         Bacteria bacteria = new Bacteria();
 
-        if (smallSize.equals("smallSize")){
+        if (animal.equals("smallSize")){
             listBacteria = bacteria.smallSize();
-        }else if (swine.equals("swine")){
+        }else if (animal.equals("swine")){
             listBacteria = bacteria.swine();
-        }else if (bovine.equals("bovine")){
+        }else if (animal.equals("bovine")){
             listBacteria = bacteria.bovine();
-        }else if (equine.equals("equine")){
+        }else if (animal.equals("equine")){
             listBacteria = bacteria.equine();
         }
         return listBacteria;
