@@ -12,13 +12,16 @@
         android:layout_width="369dp"
         android:layout_height="305dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="69dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/launcher"
+        android:src="@drawable/ic_logo_vet"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView2"

@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#2BC777</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="greenBackground">#2BC777</color>
+    <color name="teste">#5AF8A7</color>
+    <color name="backgroundHome">#2BC777</color>
 </resources>
