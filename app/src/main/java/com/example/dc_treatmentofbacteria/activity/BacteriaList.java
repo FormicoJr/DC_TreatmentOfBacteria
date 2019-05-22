@@ -7,7 +7,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.example.dc_treatmentofbacteria.DetailsBacteriaTest;
 import com.example.dc_treatmentofbacteria.R;
 import com.example.dc_treatmentofbacteria.adapter.BacteriaListAdapter;
 import com.example.dc_treatmentofbacteria.control.Bacteria;
@@ -20,11 +23,18 @@ public class BacteriaList extends AppCompatActivity {
 
     private RecyclerView rcvBacteria;
     private List<Bacteria> listBacteria = new ArrayList<>();
+    private TextView txtBacteria, txtGram, txtAntibiotic1, txtAntibiotic2, txtObs;
+    String bacteria, gram, antibiotic1, antibiotic2, obs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bacteria_list);
+
+        getSupportActionBar().hide();
+
+        Bundle typeAnimal = getIntent().getExtras();
+        final String animal = typeAnimal.getString("animal");
 
         rcvBacteria = findViewById(R.id.rcvBacteria);
 
@@ -41,17 +51,16 @@ public class BacteriaList extends AppCompatActivity {
                     @Override
                     public void onItemClick(View view, int position) {
 
-                        Intent enviar = new Intent(BacteriaList.this, DetailsBacteria.class);
+                        detailsBacteria();
+                        Bacteria list = listBacteria.get(position);
 
-                        Bacteria bacteria = listBacteria.get(position);
-
-                        enviar.putExtra("nameBacteria", bacteria.getName());
-                        enviar.putExtra("gram", bacteria.getGram());
-                        enviar.putExtra("antibiotic1", bacteria.getAntibiotic1());
-                        enviar.putExtra("antibiotic2", bacteria.getAntibiotic2());
-                        enviar.putExtra("obs", bacteria.getObs());
+                        Intent enviar = new Intent(BacteriaList.this, DetailsBacteriaTest.class);
+                        enviar.putExtra("bacteria", list.getName());
+                        enviar.putExtra("gram", list.getGram());
+                        enviar.putExtra("antibiotic1", list.getAntibiotic1());
+                        enviar.putExtra("antibiotic2", list.getAntibiotic2());
+                        enviar.putExtra("obs", list.getObs());
                         startActivity(enviar);
-
                     }
 
                     @Override

@@ -1,6 +1,7 @@
 package com.example.dc_treatmentofbacteria.activity;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,10 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.dc_treatmentofbacteria.R;
+import com.example.dc_treatmentofbacteria.control.Bacteria;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Home extends AppCompatActivity {
 
@@ -15,6 +20,7 @@ public class Home extends AppCompatActivity {
     private ImageButton btnSwine;
     private ImageButton btnEquine;
     private ImageButton btnBovine;
+    ArrayList<Bacteria> listBacteria = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

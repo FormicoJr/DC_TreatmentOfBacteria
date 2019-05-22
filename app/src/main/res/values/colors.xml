@@ -6,4 +6,6 @@
     <color name="greenBackground">#2BC777</color>
     <color name="teste">#5AF8A7</color>
     <color name="backgroundHome">#2BC777</color>
+    <color name="background_sky_blue">#2BB4CA</color>
+    <color name="background_light_green">#9BF291</color>
 </resources>

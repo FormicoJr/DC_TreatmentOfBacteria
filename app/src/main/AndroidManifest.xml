@@ -3,16 +3,17 @@
     package="com.example.dc_treatmentofbacteria">
 
     <application
-        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_logo"
         android:label="FluVet"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailsBacteriaAdapter"></activity>
-        <activity android:name=".activity.DetailsBacteria"/>
-        <activity android:name=".activity.BacteriaList"/>
+        <activity android:name=".DetailsBacteriaTest"></activity>
+        <activity android:name=".adapter.DetailsBacteriaAdapter" />
+        <activity android:name=".activity.DetailsBacteria" />
+        <activity android:name=".activity.BacteriaList" />
         <activity android:name=".activity.Home" />
         <activity android:name=".activity.LauncherScreen">
             <intent-filter>
