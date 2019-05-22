@@ -30,7 +30,7 @@
             android:background="@color/background_light_gray"
             android:text="Name of bacteria:"
             android:textAlignment="textStart"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -57,7 +57,7 @@
                 android:background="@color/background_light_gray"
                 android:text="nameBacteria"
                 android:textAllCaps="false"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -102,7 +102,7 @@
             android:layout_margin="16dp"
             android:text="Recommended Antibiotics"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -133,7 +133,7 @@
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="antibióticos"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -167,7 +167,7 @@
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="antibióticos"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
