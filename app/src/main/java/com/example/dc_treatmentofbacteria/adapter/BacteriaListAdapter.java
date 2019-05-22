@@ -28,7 +28,7 @@ public class BacteriaListAdapter  extends RecyclerView.Adapter<BacteriaListAdapt
             super(itemView);
 
             nameBacteria = itemView.findViewById(R.id.txtBacteria);
-            gram = itemView.findViewById(R.id.txtGram2);
+            gram = itemView.findViewById(R.id.txtGram);
             antibiotic1 = itemView.findViewById(R.id.txtAntibiotic1);
             antibiotic2 = itemView.findViewById(R.id.txtAntibiotic2);
             obs = itemView.findViewById(R.id.txtObs);

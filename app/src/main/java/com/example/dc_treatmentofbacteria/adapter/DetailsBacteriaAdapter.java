@@ -34,7 +34,7 @@ public class DetailsBacteriaAdapter  extends RecyclerView.Adapter<DetailsBacteri
             super(itemView);
 
             nameBacteria = itemView.findViewById(R.id.txtBacteria);
-            gram = itemView.findViewById(R.id.txtGram2);
+            gram = itemView.findViewById(R.id.txtGram);
             escolha1 = itemView.findViewById(R.id.txtEscolha1);
             escolha2 = itemView.findViewById(R.id.txtEscolha2);
             obs = itemView.findViewById(R.id.txtObs);

@@ -8,4 +8,6 @@
     <color name="backgroundHome">#2BC777</color>
     <color name="background_sky_blue">#2BB4CA</color>
     <color name="background_light_green">#9BF291</color>
+    <color name="background_light_gray">#E6E6E6</color>
+    <color name="background_light_blue">#58FAF4</color>
 </resources>
