@@ -14,8 +14,10 @@ public class DetailsBacteriaTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_bacteria_test);
 
+        getSupportActionBar().hide();
+
         txtBacteria = findViewById(R.id.txtBacteria);
-        txtGram = findViewById(R.id.txtGram2);
+        txtGram = findViewById(R.id.txtGram);
         txtAntibiotic1 = findViewById(R.id.txtAntibiotic1);
         txtAntibiotic2 = findViewById(R.id.txtAntibiotic2);
         txtObs = findViewById(R.id.txtObs);
@@ -32,6 +34,9 @@ public class DetailsBacteriaTest extends AppCompatActivity {
         txtGram.setText(gram);
         txtAntibiotic1.setText(antibiotic1);
         txtAntibiotic2.setText(antibiotic2);
+        if(obs.equals("")){
+            obs="No notes.";
+        }
         txtObs.setText(obs);
     }
 }
